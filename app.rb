@@ -12,7 +12,7 @@ module FormsLab
     end
 
     post '/pirates' do
-      binding.pry
+      ships = params["pirate"].delete("ships")
       @pirate = Pirate.new(params["pirate"])
       binding.pry
     end
