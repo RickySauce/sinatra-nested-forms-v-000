@@ -5,6 +5,13 @@
     <title></title>
   </head>
   <body>
-
+    <h2><%=Pirate.all.first.name%></h2>
+    <h2><%=Pirate.all.first.height%></h2>
+    <h2><%=Pirate.all.first.weight%></h2>
+    <%Ship.all.each do |ship|%>
+    <h2><%=ship.name %></h2>
+    <h2><%=ship.type %></h2>
+    <h2><%=ship.booty %></h2>
+    <%end%>
   </body>
 </html>
