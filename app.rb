@@ -15,7 +15,7 @@ module FormsLab
       ships = params["pirate"].delete("ships")
       Pirate.new(params["pirate"])
       ships.each {|ship| Ship.new(ship)}
-      binding.pry
+      erb :show
     end
 
   end
