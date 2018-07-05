@@ -2,10 +2,8 @@ class Pirate
   attr_accessor :name, :weight, :height
   @@all = []
 
-  def initialize(name,weight,height)
-    @name = name
-    @weight = weight
-    @height = height
+  def initialize(pirate_hash)
+    pirate_hash.each {|key, value| self.send(("#{key}="), value)}
     @@all << self
   end
 
