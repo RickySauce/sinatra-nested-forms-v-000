@@ -9,12 +9,12 @@ class Pirate
     @@all << self
   end
 
-  def self.all 
-    @@all 
+  def self.all
+    @@all
   end
 
-  def self.clear 
-    @@all.clear 
+  def self.clear
+    @@all.clear
   end
 
 end
