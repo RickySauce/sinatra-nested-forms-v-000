@@ -13,7 +13,7 @@ module FormsLab
 
     post '/pirates' do
       ships = params["pirate"].delete("ships")
-      Pirate.new(params["pirate"])
+      @piret = Pirate.new(params["pirate"])
       ships.each {|ship| Ship.new(ship)}
       erb :show
     end
